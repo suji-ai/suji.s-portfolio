@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+
+    :root{
+    --pink:#e84393;
+    }
+
+    *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    }
+ 
+    html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem ;
+    overflow-x: hidden;
+    }
+
+    section{
+    padding:2rem 9%;
+    }
+   
+    header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    }
+
+    header .logo{
+    font-size: 3rem;
+    color:#e84393;
+    font-weight: bolder;
+    } 
+
+    header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    }
+
+    header .navbar a:hover{
+    color: var(--pink );
+    }
+
+    header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-right: 3rem;
+    }
+
+    header .icons a:hover{
+    color: var(--pink);
+    }
+
+    .heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #080000;
+    padding: 1rem;
+    margin-top:10rem;
+    background: rgba(233, 160, 196, 0.818);
+    }
+
+    .heading span{
+    color: var(--pink);
+    }
+
+    .main {
+    font-size: 2rem;
+    color:grey;
+    padding: 1rem 0;
+    line-height: 1.5;
+    }
+    
+    .card-container{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+    .card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color:#ebece3;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    }
+
+    .card img{
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--pink); 
+    }
+
+    .card-content{
+    padding:10px;
+    }
+
+    .card-content  span{
+        color:rgb(12, 151, 232);
+    }
+
+    .card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #e84393;
+    }
+
+    .card-content p{
+    font-size: 15px;
+    line-height: 1.3;
+    color:grey;
+    }
+
+    .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#e84393;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .btn:hover{
+    background-color: rgb(12, 151, 232);
+    transform: scale(1.1);
+    }
+
+    .list{
+      font-style: italic;
+      padding-left: 450px;
+      color:black;
+    }
+  </style>
+</head>
+<body>
+    <header>
+
+        <a href="./index.html" class="logo"><i class="fa-solid fa-shop"></i>  Beautiful Flowers</a>
+  
+        <nav class="navbar">
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./products.html">Products</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+  
+        <div class="icons">
+          <a href="#" class="fa-solid fa-heart"></a>
+          <a href="#"  class="fa-solid fa-cart-shopping"></a>
+        </div>
+    </header>
+    <section  class="about">
+         <h1 class="heading"><span>About</span>Us  <i class="fa-solid fa-user"></i></h1>
+       <div class="main">
+         <p>  We create unique design and sell floral arrangements to individuals and arrange beautiful decor for large events.</p><br />
+             
+                <div class="list">
+                   <ul>
+                      <li>freshness & quality guaranteed.</li>
+                      <li>unique design.</li>
+                      <li>free local delivery.</li>
+                      <li>Exciting gifts and offers.</li>
+                    </ul>
+                </div>
+             
+        </div>
+       
+        <div class="card-container">
+           <div class="card">
+               <img src="../img/marriage decor.png" alt="marriage decor">
+              <div class="card-content">
+                 <center>
+                   <h3>marriage decor</h3>
+                   <p><span>"Fresh flowers timeless elegance"</span></p>
+                   <p>Flowers are carefully selected and handpicked by expert florists to bring happiness & smile. We create unique design and sell floral arrangements to individuals and arrange beautiful decor for large events. Gift cards are also available. Make peoples happy and joy with our flowers and exciting gifts we select the flowers carefully.High branded chocolates are available with flower basket. the basket are uniquely selected and decorated.</p>
+                   <a href="https://en.wikipedia.org/wiki/Flower" class="btn">Read More</a>
+                 </center>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/birthday decor.png" alt="birthday decor">
+               <div class="card-content">
+                  <center>
+                    <h3>birthday decor</h3>
+                    <p><span>"Nature's palette, handcrafted"</span></p>
+                    <p>Flowers are carefully selected and handpicked by expert florists to bring happiness & smile. </p>
+                    <a href="https://en.wikipedia.org/wiki/Flower" class="btn">Read More</a>
+                  </center>
+                 </div>
+             </div>
+             <div class="card">
+                <img src="../img/chocolate basket.png" alt="chocolate basket">
+               <div class="card-content">
+                  <center>
+                    <h3>chocolate basket</h3>
+                    <p><span>"Make your day special with our chocolate baskets"</span></p>
+                    <p>High branded chocolates are available with flower basket. the basket are uniquely selected and decorated. Gift cards are also available. Make peoples happy and joy with our flowers and exciting gifts we select the flowers carefully. </p>
+                    <a href="https://en.wikipedia.org/wiki/Flower" class="btn">Read More</a>
+                  </center>
+                 </div>
+             </div>
+              <div class="card">
+                <img src="../img/special baskets.png" alt="gifts">
+               <div class="card-content">
+                  <center>
+                    <h3>Gifts  <i class="fa-solid fa-gifts"></i></h3>
+                    <p><span>"gifts that bloom, memories that last"</span></p>
+                    <p>gifts are uniquely selected which brings hapiness and joy. Gift cards are also available. </p>
+                    <a href="https://en.wikipedia.org/wiki/Flower" class="btn">Read More</a>
+                  </center>
+                 </div>
+             </div> 
+             <div class="card">
+                <img src="../img/flower bouquet.png" alt="flower bouquet">
+               <div class="card-content">
+                  <center>
+                    <h3>flower bouquet</h3>
+                    <p><span>"Our flowers, your joy"</span></p>
+                    <p>Flowers are carefully selected and handpicked by expert florists to bring happiness & smile. </p>
+                    <a href="https://en.wikipedia.org/wiki/Flower" class="btn">Read More</a>
+                  </center>
+                 </div>
+             </div>
+        </div>
+        
+    </section>
+</body>
+</html>

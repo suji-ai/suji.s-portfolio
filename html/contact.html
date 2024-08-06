@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+     :root{
+    --pink:#e84393;
+    }
+
+    *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    }
+ 
+    html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem ;
+    overflow-x: hidden;
+    }
+
+    section{
+    padding:2rem 9%;
+    }
+
+    header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    }
+
+    header .logo{
+    font-size: 3rem;
+    color:#e84393;
+    font-weight: bolder;
+    } 
+
+    header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    }
+
+    header .navbar a:hover{
+    color: var(--pink );
+    }
+
+    header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-right: 3rem;
+    }
+
+    header .icons a:hover{
+    color: var(--pink);
+    }
+
+    .heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #080000;
+    padding: 1rem;
+    margin-top:10rem;
+    background: rgba(233, 160, 196, 0.818);
+    }
+
+    .heading span{
+    color: var(--pink);
+    }
+
+    .contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+    }
+
+    .contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0.5 rem 1.5rem rgba(0,0,0,.1);
+    border: 1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+    }
+
+    .contact .row image{
+    flex: 1 1 40rem;
+    }
+
+    .contact .row image img{
+    width: 100%;
+    }
+
+    .contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+    }
+
+    .contact .row form .box:focus{
+    border-color: var(--pink);
+    }
+
+    .contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    }
+
+    .btn-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#e84393;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .btn-btn:hover{
+    background:rgb(12, 151, 232) ;
+    }
+
+    .form{
+    font-family: cursive;
+    font-size: 2.5rem;
+    color: #e84393;
+    }
+
+    .follow{
+    font-size: 20px;
+    font-family:cursive;
+    }
+
+    .main{
+    font-size: 20px;
+    gap: 1.5rem;
+    }
+
+    .us{
+    color: #333;
+    }
+
+    .us:hover{
+    color: var(--pink);
+    }
+
+    .fa-youtube{
+    color:red;
+    }
+
+    .fa-square-instagram{
+    color:#ed09a8;
+    }
+    .fa-facebook{
+    color:blue;
+    }
+
+    .fa-square-twitter{
+    color:black;
+    }
+    
+    footer{
+    background-color: #ed09a8;
+    clear: both;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-size: 20px;
+    font-style: italic;
+    }
+</style>
+<body>
+    <header>
+
+        <a href="./index.html" class="logo"><i class="fa-solid fa-shop"></i>  Beautiful Flowers</a>
+  
+        <nav class="navbar">
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./products.html">Products</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+  
+        <div class="icons">
+          <a href="#" class="fa-solid fa-heart"></a>
+          <a href="#"  class="fa-solid fa-cart-shopping"></a>
+        </div>
+    </header>
+
+    <section class="contact">
+        <h1 class="heading"><span>Contact</span>Us</h1>
+        <div class="row">
+            <form action="">
+                <h3 class="form">Customer Information <i class="fa-solid fa-user"></i></h3>
+               <input type="text" placeholder="Name" class="box">
+               <input type="email" placeholder="Email" class="box">
+               <input type="tel" placeholder="Ph Number" class="box">
+               <h3 class="form">Delivery Information  <i class="fa-solid fa-clock"></i></h3>
+               <input type="text" placeholder="Delivery Address" class="box">
+               <input type="date" placeholder="Delivery Date" class="box">
+               <input type="time" placeholder="Delivery Time" class="box">
+               <input type="text" placeholder="Recipient Name" class="box">
+               <input type="text" placeholder="Special Instructions" class="box">
+               <h3 class="form">Order Details <i class="fa-solid fa-truck-fast"></i></h3>
+               <input type="text" placeholder="Product Name" class="box">
+               <input type="number" placeholder="Quantity" class="box">
+               <input type="text" placeholder="Personalized Message" class="box">
+               <h3 class="form">Payment Information  <i class="fa-solid fa-wallet"></i></h3>
+               <input type="text" placeholder="Cardholder's Name" class="box">
+               <input type="text" placeholder="Credit/Debit card Number" class="box">
+               <input type="text" placeholder="Expiration Date MM/YY" class="box">
+               <input type="text" placeholder="Billing Address" class="box">
+             <center>
+               <input type="submit" value="send message" class="btn-btn">
+             </center>
+            </form>
+            
+        </div>
+         <h3 class="form">Contact-info</h3><br />
+         <div class="main">
+            <p><i class="fa-solid fa-phone"></i>  +(123) 456-7890</p><br />
+            <p><i class="fa-solid fa-at"></i>  beautifulflowers@gmail.com</p><br />
+            <p><i class="fa-solid fa-location-dot"></i> 123 beautifulflowers shop, flower street, anycity, india. </p><br />       
+         </div>
+         <h3 class="form">Follow Us</h3><br />
+         <div class="follow">
+            <i class="fa-brands fa-youtube"> </i>  <a href="#" class="us">Youtube</a><br/>
+            <i class="fa-brands fa-square-instagram">  </i><a href="#" class="us">  Instagram</a> <br />
+            <i class="fa-brands fa-facebook">  </i><a href="#" class="us"> Facebook</a><br />
+            <i class="fa-brands fa-square-twitter"> </i><a href="#" class="us"> Twitter</a>
+         </div>
+        </section>
+    <footer>
+        <p>@ 2024 My Comperhensive Website. All rights reserved. Made by <b>Suji Senthil </b><i class="fa-solid fa-face-smile"></i> </p>
+    </footer>
+</body>
+</html>

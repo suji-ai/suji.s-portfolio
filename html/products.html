@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    
+      :root{
+      --pink:#e84393;
+      }
+
+      *{
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      outline: none; 
+      border: none;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: .2s linear;
+      }
+ 
+      html{
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+      scroll-padding-top: 6rem ;
+      overflow-x: hidden;
+      }
+
+      section{
+      padding:2rem 9%;
+      }
+
+      header{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #fff;
+      padding: 2rem ;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+      }
+
+      header .logo{
+      font-size: 3rem;
+      color:#e84393;
+      font-weight: bolder;
+      } 
+
+      header .navbar a{
+      font-size: 2rem;
+      padding: 0 1.5rem;
+      color: #666;
+      }
+
+      header .navbar a:hover{
+      color: var(--pink );
+      }
+
+      header .icons a{
+      font-size: 2.5rem;
+      color: #333;
+      margin-right: 3rem;
+      }
+
+      header .icons a:hover{
+      color: var(--pink);
+      }
+
+      .heading{
+      text-align: center;
+      font-size: 4rem;
+      color: #080000;
+      padding: 1rem;
+      margin-top:10rem;
+      background: rgba(233, 160, 196, 0.818);
+      }
+
+      .heading span{
+      color: var(--pink);
+      }
+
+      .items{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 30px 20px;
+      grid-column-gap:20px;
+      grid-row-gap:30px ;
+      }
+
+      .item img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: 0.2s ease;
+      }
+
+      .item img:hover{
+      transform: scale(1.04);
+      }
+
+      .item h4{
+      padding: 5px;
+      text-align: center;
+      font-size: 25px;
+     }
+
+     .item p{
+     padding: 5px;
+     text-align: center;
+     }
+
+      .item span{
+      color:orangered ;
+      font-size: 20px;
+      }
+
+       .btn-btn{
+       display: inline-block;
+       margin-top: 1rem;
+       border-radius: 5rem;
+       background:#e84393;
+       color: #fff;
+       padding: .9rem 3.5rem;
+       cursor: pointer;
+       font-size: 1.7rem;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+
+       .btn-btn:hover{
+       background:rgb(12, 151, 232) ;
+       }
+    </style>
+</head>
+<body>
+    <header>
+
+        <a href="./index.html" class="logo"><i class="fa-solid fa-shop"></i>  Beautiful Flowers</a>
+  
+        <nav class="navbar">
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./products.html">Products</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+  
+        <div class="icons">
+          <a href="#" class="fa-solid fa-heart"></a>
+          <a href="#"  class="fa-solid fa-cart-shopping"></a>
+        </div>
+    </header>
+
+    <section >
+        <h1 class="heading"><span>Latest</span>Products </h1>
+       <article class="items" id="items">
+        <div class="item">
+           <img src="../img/mixed flower pot.png" alt="mixed flower pot">
+           <h4>mixed flower pot</h4>
+           <p><span>$14.98</span></p>
+           <p><a href="./contact.html" class="btn-btn">Buy Now</a></p>
+        </div>
+        <div class="item">
+          <img src="../img/flower bouquet2.png">
+          <h4>flower bouquet</h4>
+          <p><span>$16.09</span></p>
+          <p><a href="./contact.html" class="btn-btn">Buy Now</a></p>
+       </div>
+       <div class="item">
+        <img src="../img/stylish rose pot.png">
+        <h4>Stylish Rose Pot</h4>
+        <p><span>$20.56</span></p>
+        <p><a href="./contact.html" class="btn-btn">Buy Now</a></p>
+       </div>
+       <div class="item">
+        <img src="../img/chocolate basket2.png">
+        <h4>chocolate basket</h4>
+        <p><span>$22.76</span></p>
+        <p><a href="./contact.html" class="btn-btn">Buy Now</a></p>
+     </div>
+     <div class="item">
+        <img src="../img/flower teddybear.png">
+        <h4>flower teddy bear</h4>
+        <p><span>$32.03</span></p>
+        <p><a href="./contact.html" class="btn-btn">Buy Now</a></p>
+     </div>
+     <div class="item">
+        <img src="../img/flower pot.png">
+        <h4>pink rose pot</h4>
+        <p><span>$8.23</span></p>
+       <p><a href="./contact.html" class="btn-btn">Buy Now</a></p> 
+      </div>
+   </article> 
+   </section>
+</body>
+</html>
